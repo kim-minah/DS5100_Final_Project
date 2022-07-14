@@ -30,8 +30,8 @@ class Die:
         
         Parameters
         ----------
-        face: the face value to be changed (needs to be a float or be able to be converted to a float)
-        weight: the new weight
+        face: the face value to be changed 
+        weight: the new weight (needs to be a float or be able to be converted to a float)
 
         """
         if face in self.faces:
@@ -94,16 +94,13 @@ class Game:
         
     def play(self, num_rolls=1):
         """
-        A method to play a game, i.e. to rolls all of the dice a given number of times.
+        A method to play a game, i.e. to rolls all of the dice a given number of times. 
+        A dataframe of the result of the playwith shape N rolls by M dice gets saved as a private variable.
         
         Parameters
         ----------
-        num_times: how many times the dice should be rolled; defaults to 1. 
+        num_rolls: how many times the dice should be rolled; defaults to 1. 
         
-        Returns
-        ----------
-        Output: dataframe of the result of the playwith shape N rolls by M dice, saved as a private variable
-
         """
         results = [x.roll(num_rolls) for x in self._private_die_obj]
         plays = pd.DataFrame(results,
@@ -159,10 +156,6 @@ class Analyzer:
     def jackpot(self):
         """
         A method to compute how many times the game resulted in all faces being identical.
-        
-        Parameters
-        ----------
-        num_times: how many times the die is to be rolled; defaults to 1. 
         
         Returns
         ----------
