@@ -1,0 +1,45 @@
+test_10_analyzer_facecountsperroll (__main__.MonteCarloTestSuite) ... ERROR
+test_1_die_changeweight (__main__.MonteCarloTestSuite) ... ok
+test_2_die_changeweight_false (__main__.MonteCarloTestSuite) ... ok
+test_3_die_roll (__main__.MonteCarloTestSuite) ... ok
+test_4_die_show (__main__.MonteCarloTestSuite) ... ok
+test_5_game_play (__main__.MonteCarloTestSuite) ... ok
+test_6_game_show_narrow (__main__.MonteCarloTestSuite) ... ok
+test_7_game_show_wide (__main__.MonteCarloTestSuite) ... ok
+test_8_analyzer_jackpot (__main__.MonteCarloTestSuite) ... ERROR
+test_9_analyzer_combo (__main__.MonteCarloTestSuite) ... ERROR
+
+======================================================================
+ERROR: test_10_analyzer_facecountsperroll (__main__.MonteCarloTestSuite)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\mk7kc\Documents\GitHub\DS5100_Final_Project\montecarlo\montecarlo_unittest.py", line 88, in test_10_analyzer_facecountsperroll
+    analyzer = Analyzer(game)
+  File "C:\Users\mk7kc\Documents\GitHub\DS5100_Final_Project\montecarlo\montecarlo.py", line 156, in __init__
+    self.datatype = type(self.game_obj.die_obj[0].faces)
+AttributeError: 'Game' object has no attribute 'die_obj'
+
+======================================================================
+ERROR: test_8_analyzer_jackpot (__main__.MonteCarloTestSuite)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\mk7kc\Documents\GitHub\DS5100_Final_Project\montecarlo\montecarlo_unittest.py", line 68, in test_8_analyzer_jackpot
+    analyzer = Analyzer(game)
+  File "C:\Users\mk7kc\Documents\GitHub\DS5100_Final_Project\montecarlo\montecarlo.py", line 156, in __init__
+    self.datatype = type(self.game_obj.die_obj[0].faces)
+AttributeError: 'Game' object has no attribute 'die_obj'
+
+======================================================================
+ERROR: test_9_analyzer_combo (__main__.MonteCarloTestSuite)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "C:\Users\mk7kc\Documents\GitHub\DS5100_Final_Project\montecarlo\montecarlo_unittest.py", line 78, in test_9_analyzer_combo
+    analyzer = Analyzer(game)
+  File "C:\Users\mk7kc\Documents\GitHub\DS5100_Final_Project\montecarlo\montecarlo.py", line 156, in __init__
+    self.datatype = type(self.game_obj.die_obj[0].faces)
+AttributeError: 'Game' object has no attribute 'die_obj'
+
+----------------------------------------------------------------------
+Ran 10 tests in 2.218s
+
+FAILED (errors=3)
