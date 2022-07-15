@@ -117,6 +117,7 @@ A class that akes the results of a single game and computes various descriptive 
 ### montecarlo/
 | Name | Description |
 | ------ | ------ |
+| __init.py | Init file for module |
 | montecarlo.py | Monte carlo module |
 | montecarlo_unittest.py | Unit test file |
 | montecarlo_unitest_results.txt | Results from unit test |
